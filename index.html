@@ -1,32 +1,49 @@
-<style>
-    body, html {
-        height: 100%;
-        margin: 0;
-        background-color: #000;
-        overflow: hidden; 
-    }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nexosv.org | Construyendo Vidas</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .bg-image {
-        width: 100vw;
-        height: 100vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-
-    @media only screen and (max-width: 1024px) {
+        /* Contenedor de la imagen */
         .bg-image {
-            background-image: url("movil.png");
+            width: 100vw;
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;            
             background-size: contain; 
         }
-    }
 
-
-    @media only screen and (min-width: 1025px) {
-        .bg-image {
-            background-image: url("pc.png");
-            background-size: cover;
+        /* --- VISTA PARA MÓVILES (Pantallas de hasta 1024px de ancho) --- */
+        @media only screen and (max-width: 1024px) {
+            .bg-image {
+                background-image: url("movil.png") !important;
+            }
         }
-    }
-</style>
+
+        /* --- VISTA PARA COMPUTADORAS (Pantallas mayores a 1024px) --- */
+        @media only screen and (min-width: 1025px) {
+            .bg-image {
+                background-image: url("pc.png") !important;
+                background-size: cover;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-image"></div>
+
+</body>
+</html>
