@@ -6,24 +6,24 @@
     }
 
     .bg-image {
-        height: 100%;
+        width: 100%;
+        height: 100vh; /* Asegura que ocupe el alto de la pantalla */
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
-    @media only screen and (min-width: 768px) {
-        .bg-image {
-            background-image: url("pc.png");
-        }
+    /* Computadora */
+    @media (min-width: 768px) {
+        .bg-image { background-image: url("pc.png"); }
     }
 
-    @media only screen and (max-width: 767px) {
-        .bg-image {
-            background-image: url("movil.png");
-        }
+    /* Celular */
+    @media (max-width: 767px) {
+        .bg-image { background-image: url("movil.png"); }
     }
 </style>
+
+<body>
+    <div class="bg-image"></div>
+</body>
