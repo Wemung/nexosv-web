@@ -3,44 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Nexosv.org | Construyendo Vidas</title>
+    <title>Nexosv.org</title>
     <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
+        body, html { height: 100%; margin: 0; background-color: #000; overflow: hidden; }
         .bg-image {
             width: 100vw;
             height: 100vh;
             background-position: center;
             background-repeat: no-repeat;
-            background-size: contain; 
+            background-size: contain;
+            background-image: url("movil.png"); 
         }
-
-        @media only screen and (max-width: 1024px) {
-            .bg-image {
-                background-image: url("movil.png") !important;
-            }
-        }
-
         @media only screen and (min-width: 1025px) {
-            .bg-image {
-                background-image: url("pc.png") !important;
-                background-size: cover;
-            }
+            .bg-image { background-image: url("pc.png"); background-size: cover; }
         }
     </style>
 </head>
 <body>
-
     <div class="bg-image"></div>
-
 </body>
 </html>
