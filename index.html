@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Nexosv.org | Construyendo Vidas</title>
     <style>
         body, html {
@@ -15,23 +16,20 @@
             align-items: center;
         }
 
-        /* Contenedor de la imagen */
         .bg-image {
             width: 100vw;
             height: 100vh;
             background-position: center;
-            background-repeat: no-repeat;            
+            background-repeat: no-repeat;
             background-size: contain; 
         }
 
-        /* --- VISTA PARA MÓVILES (Pantallas de hasta 1024px de ancho) --- */
         @media only screen and (max-width: 1024px) {
             .bg-image {
                 background-image: url("movil.png") !important;
             }
         }
 
-        /* --- VISTA PARA COMPUTADORAS (Pantallas mayores a 1024px) --- */
         @media only screen and (min-width: 1025px) {
             .bg-image {
                 background-image: url("pc.png") !important;
@@ -46,4 +44,3 @@
 
 </body>
 </html>
-
